@@ -21,3 +21,7 @@ body {
 a {
 	target: _blank;
 }
+
+.email span:nth-child(2n + 1){
+	display: none;
+}
