@@ -1,1 +1,29 @@
-<p style="font-size:280px;">22</p>    
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#">
+<title>Days Since Weather Station Broke</title>
+<meta name="description" content="Find out how many days it's been since the MHS weather station broke here!"/>
+<meta property="og:title" content="Days Since Weather Station Broke"/>
+<meta property="og:site_name" content="Nathan Kiesman Portfolio"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://nkizz.com/days.html"/>
+<meta property="og:description" content="Find out how many days it's been since the MHS weather station broke!"/>
+<meta property="og:image:width" content="1360">
+<meta property="og:image:height" content="712">
+<meta property="og:image" content="https://nkizz.com/weather-station.jpg">
+<style>p { margin: 0px; font-size: 280px; }</style>
+</head>
+
+<body>
+<main itemscope itemtype="http://schema.org/WebPage">
+<meta itemprop="name" content="Days Since Weather Station Broke"/>
+<meta itemprop="description" content="Find out how many days it's been since the MHS weather station broke!"/>
+<p id="days"></p>
+</main>
+<script>
+var lastBrokeDate = new Date(2019, 3, 25); //April 25, 2019
+var currentDate = new Date();
+document.getElementById("days").innerText = Math.floor((currentDate-lastBrokeDate)/(1000*60*60*24));
+</script>
+</body>
+</html>
